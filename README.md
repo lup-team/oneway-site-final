@@ -55,4 +55,3 @@ Before connecting the real custom domain, replace every occurrence of `https://o
 
 Then add the GA4 Measurement ID and verify the final domain in Google Search Console.
 
-Cloudflare connection test
