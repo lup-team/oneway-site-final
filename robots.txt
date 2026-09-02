@@ -3,4 +3,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://onewaytravel.example/sitemap.xml
+Sitemap: https://onewaytravelom.com/sitemap.xml
