@@ -5168,3 +5168,89 @@ html[dir="ltr"]
     display: none !important;
   }
 }
+
+/* Small LUP signature — One Way footer */
+.oneway-lup-credit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 12px 6px;
+}
+
+.lup-credit-mini {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+
+  min-height: 30px;
+  padding: 4px 12px 4px 7px;
+
+  direction: ltr;
+  color: #261732;
+  background: rgba(247, 245, 240, 0.96);
+
+  border: 1px solid rgba(174, 169, 153, 0.55);
+  border-radius: 999px;
+
+  text-decoration: none;
+  box-shadow: 0 3px 10px rgba(38, 23, 50, 0.06);
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.lup-credit-mini__mark {
+  display: block;
+  width: 20px;
+  height: 20px;
+  flex: 0 0 20px;
+}
+
+.lup-credit-mini span {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 0.52rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.lup-credit-mini:hover {
+  transform: translateY(-1px);
+  border-color: #aea999;
+  box-shadow: 0 5px 14px rgba(38, 23, 50, 0.1);
+}
+
+.lup-credit-mini:focus-visible {
+  outline: 2px solid rgba(174, 169, 153, 0.8);
+  outline-offset: 3px;
+}
+
+@media (max-width: 480px) {
+  .lup-credit-mini {
+    min-height: 28px;
+    gap: 6px;
+    padding: 3px 10px 3px 6px;
+  }
+
+  .lup-credit-mini__mark {
+    width: 18px;
+    height: 18px;
+    flex-basis: 18px;
+  }
+
+  .lup-credit-mini span {
+    font-size: 0.47rem;
+    letter-spacing: 0.1em;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lup-credit-mini {
+    transition: none;
+  }
+}
